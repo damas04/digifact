@@ -1109,6 +1109,8 @@ body, html {
     }
     .footer-right {
         flex-direction: column;
+        gap: 10px;
         text-align: center;
     }
+
 }
