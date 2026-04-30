@@ -18,6 +18,7 @@ body, html {
 /* ========== HEADER & NAVIGATION ========== */
 .header {
     position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -29,6 +30,10 @@ body, html {
 
 
 .nav {
+    background-color: rgba(255, 255, 255, 0.232);
+    backdrop-filter: blur(12px);
+    padding: 10px 20px;
+    border-radius: 230px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,11 +51,11 @@ body, html {
     isolation: isolate;
     gap: 28px;
     padding: 15px 24px;
-    border-radius: 999px;
+    /* border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05), inset 0 0 0.5px rgba(255,255,255,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05), inset 0 0 0.5px rgba(255,255,255,0.3); */
     position: relative;
 }
 
@@ -59,7 +64,6 @@ body, html {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: linear-gradient(120deg, rgba(255,255,255,0.15), transparent, rgba(255,255,255,0.1));
     opacity: 0.4;
     pointer-events: none;
 }
@@ -68,7 +72,7 @@ body, html {
     position: relative;
     font-size: 0.75rem;
     text-decoration: none;
-    color: #526D82;
+    color: #17212D;
     text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -796,6 +800,10 @@ body, html {
     .text-area h1 { max-width: 100%; }
     .text-area p { max-width: 100%; text-align: center; }
     .main-heading2 { text-align: center; }
+    .nav {
+        padding: 16px 5%;
+        border-radius: 20px;
+    }
     
     .text-area {
         width: 90%;
