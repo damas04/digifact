@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* ========== GLOBAL RESET & FONTS ========== */
 * {
@@ -9,8 +9,8 @@
 
 body, html {
     background-color: #ffffff;
-    color: #1a1a1a;
-    font-family: 'Goldman', sans-serif;
+    color: #17212D;
+    font-family: 'poppins', sans-serif;
     width: 100%;
     overflow-x: hidden;
 }
@@ -24,8 +24,6 @@ body, html {
     padding: 20px 5%;
     z-index: 1000;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.513);
-    backdrop-filter: blur(10px);
 }
 
 
@@ -47,7 +45,7 @@ body, html {
     display: flex;
     isolation: isolate;
     gap: 28px;
-    padding: 10px 24px;
+    padding: 15px 24px;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -70,7 +68,8 @@ body, html {
     position: relative;
     font-size: 0.75rem;
     text-decoration: none;
-    color: #fff;
+    color: #526D82;
+    text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: flex;
@@ -78,7 +77,6 @@ body, html {
     align-items: center;
     transition: all 0.3s ease;
     mix-blend-mode: difference;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.71);
 }
 
 .menu-card a span {
@@ -87,8 +85,9 @@ body, html {
 }
 
 .menu-card a:hover {
-    color: #526D82;
+    color: #9DB2BF;
     transform: translateY(-1px);
+    font-weight: bold;
 }
 
 .menu-card a::after {
@@ -98,7 +97,7 @@ body, html {
     left: 0;
     width: 0%;
     height: 1px;
-    background: #000;
+    background: #17212D;
     transition: width 0.3s ease;
 }
 
@@ -107,11 +106,10 @@ body, html {
 }
 
 .cta {
-    padding: 10px 18px;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: #111;
+    padding: 15px 25px;
+    font-size: 0.9rem;
+    background: linear-gradient(120deg, #17212D, #526D82);
+    font-weight: 600;
     color: #fff;
     border: none;
     border-radius: 999px;
@@ -120,7 +118,7 @@ body, html {
 }
 
 .cta:hover {
-    background: #000;
+    background: #27374D;
     transform: translateY(-2px);
 }
 
@@ -202,7 +200,7 @@ body, html {
 .mobile-menu-card a {
     font-size: 1.1rem;
     text-decoration: none;
-    color: #111;
+    color: #27374D;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
@@ -211,7 +209,7 @@ body, html {
 }
 
 .mobile-menu-card a:hover {
-    color: #0072ff;
+    color: #526D82;
     transform: translateX(6px);
 }
 
@@ -220,7 +218,7 @@ body, html {
     padding: 14px;
     border-radius: 999px;
     border: none;
-    background: #111;
+    background: #27374D;
     color: #fff;
     font-family: 'Goldman', sans-serif;
     font-size: 0.9rem;
@@ -296,7 +294,7 @@ body, html {
     font-size: inherit; 
     line-height: 1.2; 
     margin-bottom: 20px;
-    background: linear-gradient(180deg, #17212D 0%, #2c3e4e 100%);
+    background: linear-gradient(180deg, #27374D 0%, #526D82 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -317,11 +315,10 @@ body, html {
 .description {
     text-transform: none;
     font-size: clamp(0.9rem, 3.5vw, 1.2rem);
-    font-weight: 400;
-    color: #555;
+    font-weight: normal;
+    color: #DDE6ED;
     max-width: 80%;
     line-height: 1.6;
-    -webkit-text-fill-color: #555;
     background: none;
 }
 
@@ -346,7 +343,7 @@ body, html {
     font-size: clamp(1.6rem, 6vw, 4.5rem);
     line-height: 1.2;
     text-transform: uppercase;
-    color: #17212D;
+    color: #526D82;
 }
 
 .reveal-text span {
@@ -361,7 +358,7 @@ body, html {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: #000;
+    background: #17212D;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -462,7 +459,7 @@ body, html {
 }
 
 .ui-1 { top: 20px; right: 20px; }
-.ui-2 { bottom: 20px; left: -10px; border-left: 5px solid #0072ff; }
+.ui-2 { bottom: 20px; left: -10px; border-left: 5px solid #526D82; }
 
 .status-bar {
     display: flex;
@@ -489,14 +486,14 @@ body, html {
 .main-heading {
     font-size: clamp(3rem, 5vw, 5rem);
     line-height: 0.9;
-    color: #fff;
+    color: #DDE6ED;
     text-transform: uppercase;
 }
 
 .main-heading2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1;
-    color: #fff;
+    color: #DDE6ED;
     text-transform: uppercase;
     text-align: center;
 }
@@ -532,7 +529,7 @@ body, html {
 
 /* Services Section */
 .services-section {
-    background: #000;
+    background: #17212D;
     padding: 100px 5%;
     color: #fff;
 }
@@ -558,7 +555,7 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #27374D;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.1s ease-out, border-color 0.4s ease;
     transform-style: preserve-3d;
@@ -594,7 +591,7 @@ body, html {
 
 .card-num {
     font-size: 0.7rem;
-    color: #0072ff;
+    color: #9DB2BF;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
@@ -605,6 +602,7 @@ body, html {
     text-transform: uppercase;
     margin-bottom: 12px;
     transition: 0.3s;
+    color: #526D82;
 }
 
 .card-content p {
@@ -615,7 +613,7 @@ body, html {
 }
 
 .card-3d:hover .card-inner {
-    border-color: #0072ff;
+    border-color: #9DB2BF;
 }
 
 .card-3d:hover .card-bg {
@@ -624,7 +622,7 @@ body, html {
 }
 
 .card-3d:hover h3 {
-    color: #0072ff;
+    color: #9DB2BF;
 }
 
 /* ========== SECTION 5 - FUTURISTIC STYLE ========== */
@@ -705,7 +703,7 @@ body, html {
     top: -30px;
     right: 20px;
     font-size: 0.7rem;
-    color: #0072ff;
+    color: #526D82;
     font-family: monospace;
     letter-spacing: 2px;
     opacity: 0.7;
@@ -717,17 +715,17 @@ body, html {
     bottom: -30px;
     right: 20px;
     font-size: 0.7rem;
-    color: #0072ff;
+    color: #526D82;
     font-family: monospace;
     letter-spacing: 2px;
     opacity: 0.7;
 }
 
 .text-area h1 {
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 5vw, 3.8rem);
     max-width: 100%;
     text-transform: uppercase;
-    color: #fff;
+    color: #DDE6ED;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -737,7 +735,7 @@ body, html {
 
 .text-area h1::before {
     content: '>';
-    color: #0072ff;
+    color: #DDE6ED;
     margin-right: 15px;
     font-weight: bold;
     animation: blink 1s infinite;
@@ -751,7 +749,7 @@ body, html {
     color: #ccc;
     line-height: 1.8;
     position: relative;
-    border-left: 2px solid #0072ff;
+    border-left: 2px solid #DDE6ED;
     padding-left: 20px;
 }
 
@@ -811,7 +809,7 @@ body, html {
         margin-left: 0;
         text-align: center;
         border-left: none;
-        border-top: 2px solid #0072ff;
+        border-top: 2px solid #526D82;
         padding-top: 20px;
         padding-left: 0;
     }
@@ -838,7 +836,7 @@ body, html {
 
 /* ================= WHY SECTION ================= */
 .why-section {
-    background: #000;
+    background: #17212D;
     color: #fff;
     min-height: 100vh;
     display: flex;
@@ -889,7 +887,7 @@ body, html {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #0072ff, transparent);
+    background: linear-gradient(90deg, transparent, #526D82, transparent);
     transition: 0.5s;
 }
 
@@ -899,13 +897,13 @@ body, html {
 
 .why-card:hover {
     transform: translateY(-10px) scale(1.02);
-    border-color: #0072ff;
+    border-color: #9DB2BF;
     box-shadow: 0 0 30px rgba(0,114,255,0.2);
 }
 
 .card-index {
     font-size: 0.7rem;
-    color: #0072ff;
+    color: #526D82;
     letter-spacing: 3px;
     margin-bottom: 15px;
     display: block;
@@ -926,7 +924,7 @@ body, html {
 
 /* ================= CTA SECTION ================= */
 .cta-section {
-    background: #000;
+    background: #17212D;
     padding: 140px 5%;
     display: flex;
     justify-content: center;
@@ -936,8 +934,8 @@ body, html {
     width: 100%;
     max-width: 800px;
     border: 1px solid rgba(0,114,255,0.2);
-    background: rgba(0,0,0,0.9);
-    box-shadow: 0 0 40px rgba(0,114,255,0.1);
+    background: #17212D;
+    box-shadow: 0 0 40px rgba(0, 63, 139, 0.1);
 }
 
 /* terminal header */
@@ -953,7 +951,7 @@ body, html {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #0072ff;
+    background: #526D82;
     opacity: 0.7;
 }
 
@@ -995,34 +993,35 @@ body, html {
     border-bottom: 1px solid rgba(255,255,255,0.2);
     padding: 10px 0;
     color: #fff;
-    font-family: monospace;
+    font-family: poppins;
     outline: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #0072ff;
+    border-color: #526D82;
 }
 
 .btn-submit {
     margin-top: 20px;
     padding: 14px;
-    background: transparent;
-    border: 1px solid #0072ff;
-    color: #0072ff;
+    background: linear-gradient(120deg, #17212D, #526D82);
+    border: 1px solid #17212D;
+    color: #9DB2BF;
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 10px;
 }
 
 .btn-submit:hover {
-    background: #0072ff;
-    color: #000;
+    background: linear-gradient(120deg, #526D82, #17212D);
+    color: #DDE6ED;
 }
 
 /* ================= FOOTER ================= */
 .footer {
-    background: #000;
+    background: #17212D;
     border-top: 1px solid rgba(0,114,255,0.2);
     padding: 60px 5% 30px;
     color: #888;
@@ -1066,7 +1065,7 @@ body, html {
     bottom: -4px;
     width: 0%;
     height: 1px;
-    background: #0072ff;
+    background: #526D82;
     transition: 0.3s;
 }
 
