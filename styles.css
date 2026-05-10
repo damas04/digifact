@@ -141,7 +141,8 @@ a.cta {
 @media (max-width: 768px) {
     .cta {
         background: none;
-        color:transparent
+        color:transparent;
+        padding: 0;
     }
 }
 
