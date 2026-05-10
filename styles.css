@@ -126,7 +126,7 @@ body, html {
     transition: all 0.3s ease;
 }
 
-.cta:hover {
+.cta-:hover {
     background: #27374D;
     transform: translateY(-2px);
 }
@@ -137,6 +137,14 @@ a.cta {
     justify-content: center;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .cta {
+        background: none;
+        color:transparent
+    }
+}
+
 
 /* Burger Menu */
 .burger {
@@ -245,7 +253,9 @@ a.cta {
 
 .mobile-menu-card a.mobile-cta {
     text-decoration: none;
-    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 12px;
 }
 
 /* Responsive */
