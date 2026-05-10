@@ -12,7 +12,6 @@ body, html {
     color: #17212D;
     font-family: 'poppins', sans-serif;
     width: 100%;
-    overflow-x: hidden;
 }
 
 /* ========== HEADER & NAVIGATION ========== */
@@ -43,6 +42,12 @@ body, html {
 .logo img {
     width: 150px;
     display: block;
+}
+
+.logo-link {
+    display: block;
+    flex-shrink: 0;
+    text-decoration: none;
 }
 
 /* Desktop Menu Card (Glass) */
@@ -124,6 +129,13 @@ body, html {
 .cta:hover {
     background: #27374D;
     transform: translateY(-2px);
+}
+
+a.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 /* Burger Menu */
@@ -229,6 +241,11 @@ body, html {
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+.mobile-menu-card a.mobile-cta {
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* Responsive */

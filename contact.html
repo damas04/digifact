@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contact | DIGIFACT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="nav">
+                <a href="index.html" class="logo logo-link">
+                    <img src="assets/logo.svg" alt="DIGIFACT Logo">
+                </a>
+                <nav class="menu-card">
+                    <a href="index.html"><span>01</span> Home</a>
+                    <a href="about.html"><span>02</span> About</a>
+                    <a href="work.html"><span>03</span> Work</a>
+                    <a href="contact.html" aria-current="page"><span>04</span> Contact</a>
+                </nav>
+                <a href="#contact-channel" class="cta contact-nav-cta">Contact Us</a>
+                <div class="burger" role="button" tabindex="0" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu-card">
+                    <button class="mobile-close" type="button" aria-label="Close Menu">✕</button>
+                    <a href="index.html"><span>01</span> Home</a>
+                    <a href="about.html"><span>02</span> About</a>
+                    <a href="work.html"><span>03</span> Work</a>
+                    <a href="contact.html"><span>04</span> Contact</a>
+                    <a href="#contact-channel" class="mobile-cta">Contact Us</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 1. Hero -->
+        <section class="contact-hero">
+            <canvas id="contact-hero-canvas" class="contact-hero-canvas" aria-hidden="true"></canvas>
+            <div class="future-bg contact-hero-bg">
+                <div class="grid-overlay"></div>
+                <div class="glow-point contact-glow contact-glow--1"></div>
+                <div class="glow-point contact-glow contact-glow--2"></div>
+            </div>
+            <div class="contact-hero-layers" aria-hidden="true">
+                <span class="contact-layer contact-layer--1"></span>
+                <span class="contact-layer contact-layer--2"></span>
+            </div>
+            <div class="giant-text-wrapper contact-hero-giant">
+                <h2 class="bg-text">CONTACT</h2>
+            </div>
+            <div class="contact-hero-content">
+                <div class="status-bar contact-hero-status">
+                    <span class="dot"></span>
+                    <span class="status-text">ENGAGEMENT · CHANNEL OPEN</span>
+                </div>
+                <h1 class="contact-hero-title">Let’s Build the Future Together</h1>
+                <p class="contact-hero-lead description">DIGIFACT partners with governments, enterprises and telecom
+                    operators to deliver intelligent digital infrastructure and future-ready systems.</p>
+                <a href="#contact-channel" class="contact-hero-bridge btn-cyber"><span class="btn-content">Open secure
+                        channel</span></a>
+            </div>
+        </section>
+
+        <div id="contact-channel" class="contact-anchor"></div>
+
+        <!-- 2. Form + visual -->
+        <section id="contact-form" class="contact-channel cinematic-container">
+            <div class="future-bg"><div class="grid-overlay"></div></div>
+            <div class="giant-text-wrapper contact-form-watermark">
+                <h2 class="bg-text contact-bg-text-soft">CHANNEL</h2>
+            </div>
+            <div class="contact-split">
+                <div class="contact-split-form">
+                    <div class="contact-terminal-shell contact-terminal-scan">
+                        <div class="terminal-header">
+                            <span></span><span></span><span></span>
+                            <p>SYSTEM · SECURE CONTACT INIT</p>
+                        </div>
+                        <div class="terminal-body contact-terminal-body">
+                            <h2 class="contact-terminal-title">Initiate briefing</h2>
+                            <p class="contact-terminal-lead">Concise signals help us route your mandate faster.</p>
+                            <form class="contact-premium-form" id="digifact-contact-form" action="#" method="post"
+                                novalidate>
+                                <div class="contact-field-row">
+                                    <label class="contact-field">
+                                        <span class="contact-label">Full name</span>
+                                        <input type="text" name="name" autocomplete="name" placeholder=">"
+                                            required>
+                                    </label>
+                                    <label class="contact-field">
+                                        <span class="contact-label">Company</span>
+                                        <input type="text" name="company" autocomplete="organization" placeholder=">"
+                                            required>
+                                    </label>
+                                </div>
+                                <div class="contact-field-row">
+                                    <label class="contact-field">
+                                        <span class="contact-label">Email</span>
+                                        <input type="email" name="email" autocomplete="email" placeholder=">"
+                                            required>
+                                    </label>
+                                    <label class="contact-field">
+                                        <span class="contact-label">Phone</span>
+                                        <input type="tel" name="phone" autocomplete="tel" placeholder=">">
+                                    </label>
+                                </div>
+                                <label class="contact-field contact-field--full">
+                                    <span class="contact-label">Project type</span>
+                                    <select name="project_type" class="contact-select" required>
+                                        <option value="">Select scope...</option>
+                                        <option value="gov">Government / public sector</option>
+                                        <option value="enterprise">Enterprise platform</option>
+                                        <option value="telecom">Telecom / carrier</option>
+                                        <option value="infra">Critical infrastructure</option>
+                                        <option value="ai">AI / data systems</option>
+                                        <option value="other">Other strategic program</option>
+                                    </select>
+                                </label>
+                                <label class="contact-field contact-field--full">
+                                    <span class="contact-label">Message</span>
+                                    <textarea name="message" rows="5" placeholder=">"
+                                        required></textarea>
+                                </label>
+                                <button type="submit" class="contact-submit-btn">
+                                    transmit request
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-split-visual">
+                    <canvas id="contact-visual-canvas" class="contact-visual-canvas" aria-hidden="true"></canvas>
+                    <div class="contact-visual-frame">
+                        <div class="ui-element ui-visual-1">MESH_GRAPH</div>
+                        <div class="ui-element ui-visual-2">LATENCY_SAFE</div>
+                        <div class="contact-visual-core" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Contact details -->
+        <section class="contact-details">
+            <div class="section-title contact-details-head">
+                <div class="status-bar" style="justify-content: center;">
+                    <span class="dot"></span>
+                    <span class="status-text">DIRECT CHANNELS</span>
+                </div>
+                <h2 class="main-heading2">Reach DIGIFACT</h2>
+            </div>
+            <div class="contact-detail-grid">
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon contact-detail-icon--pin" aria-hidden="true"></span>
+                    <h3>HQ</h3>
+                    <p>Algiers, Algeria<br>Strategic programs &amp; integration leadership.</p>
+                </article>
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon contact-detail-icon--mail" aria-hidden="true"></span>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@digifact.example">contact@digifact.example</a></p>
+                </article>
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon contact-detail-icon--phone" aria-hidden="true"></span>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+213000000000">+213 000 000 000</a><br><span
+                            class="contact-detail-note">placeholder</span></p>
+                </article>
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon contact-detail-icon--clock" aria-hidden="true"></span>
+                    <h3>Hours</h3>
+                    <p>Sun–Thu · 09:00–18:00<br><span class="contact-detail-note">CET-aligned response windows</span>
+                    </p>
+                </article>
+                <article class="contact-detail-card contact-detail-card--wide">
+                    <span class="contact-detail-icon contact-detail-icon--link" aria-hidden="true"></span>
+                    <h3>Social</h3>
+                    <p class="contact-social">
+                        <a href="https://www.linkedin.com/company/digifact" target="_blank" rel="noopener noreferrer"
+                            class="contact-social-link">LinkedIn →</a>
+                        <a href="#" class="contact-social-link contact-social-link--ghost">Corporate updates <span
+                                aria-hidden="true">↗</span></a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. Global / network -->
+        <section class="contact-global cinematic-container">
+            <div class="future-bg"><div class="grid-overlay"></div></div>
+            <div class="glow-point contact-global-glow"></div>
+            <canvas id="contact-global-canvas" class="contact-global-canvas" aria-hidden="true"></canvas>
+            <div class="giant-text-wrapper contact-global-watermark">
+                <h2 class="bg-text contact-bg-text-soft">NETWORK</h2>
+            </div>
+            <div class="contact-global-copy">
+                <div class="status-bar">
+                    <span class="dot"></span>
+                    <span class="status-text">STRATEGIC FABRIC</span>
+                </div>
+                <h2 class="main-heading contact-global-heading">Integrated systems<br><span>for sovereign-scale
+                        delivery</span></h2>
+                <p class="description contact-global-desc">Connected architectures, disciplined integration, and
+                    operators who understand how critical workloads behave when the unexpected lands.</p>
+            </div>
+        </section>
+
+        <!-- 5. CEO manifesto -->
+        <section class="contact-ceo cinematic-container" aria-labelledby="contact-ceo-heading">
+            <div class="future-bg contact-ceo-bg">
+                <div class="grid-overlay"></div>
+                <div class="glow-point contact-ceo-glow"></div>
+            </div>
+            <div class="giant-text-wrapper contact-ceo-watermark">
+                <h2 class="bg-text contact-bg-text-faint">VISION</h2>
+            </div>
+            <div class="contact-ceo-inner">
+                <div class="status-bar contact-ceo-status">
+                    <span class="dot"></span>
+                    <span class="status-text">CEO · CLOSING SIGNAL</span>
+                </div>
+                <blockquote class="contact-ceo-quote" id="contact-ceo-heading">
+                    <p class="contact-ceo-text">Every transformation begins with a vision backed by execution.</p>
+                </blockquote>
+                <p class="contact-ceo-sig">Aymane Berrah — CEO, DIGIFACT</p>
+            </div>
+        </section>
+
+        <!-- 6. Bridge to footer -->
+        <section class="contact-bridge">
+            <div class="future-bg contact-bridge-bg" aria-hidden="true">
+                <div class="grid-overlay"></div>
+            </div>
+            <div class="contact-bridge-inner">
+                <div class="status-bar contact-bridge-status">
+                    <span class="dot"></span>
+                    <span class="status-text">SESSION COMPLETE · FOOTER FOLLOW</span>
+                </div>
+                <p class="contact-bridge-label">Explore the DIGIFACT continuum</p>
+                <div class="contact-bridge-actions">
+                    <a href="work.html" class="btn-cyber contact-bridge-primary"><span class="btn-content">View references</span></a>
+                    <a href="index.html" class="contact-bridge-second">← Home orbit</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer contact-footer-enter">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="assets/logo-white.png" alt="DIGIFACT Logo">
+                    <p>Engineering Digital Infrastructure for Complex Organizations.</p>
+                </div>
+
+                <div class="footer-right">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Solutions</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 DIGIFACT. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
